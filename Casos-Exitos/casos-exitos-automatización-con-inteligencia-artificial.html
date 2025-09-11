@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Éxito | Ninapochona - Automatización Inteligente</title>
+    <meta name="description" content="Descubre casos reales de empresas que transformaron sus procesos con nuestros agentes de automatización. Resultados comprobados y testimonios verificados.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #00cc66;
+            --primary-blue: #3366cc;
+            --secondary-green: #00aa55;
+            --secondary-blue: #2a56b7;
+            --dark-blue: #1e3a8a;
+            --light-bg: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #334155;
+            overflow-x: hidden;
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(51,102,204,0.1) 0%, rgba(0,204,102,0.1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(rgba(51,102,204,0.2) 0%, transparent 70%);
+            top: -250px;
+            right: -250px;
+            z-index: 0;
+        }
+        
+        .hero-gradient::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(rgba(0,204,102,0.2) 0%, transparent 70%);
+            bottom: -200px;
+            left: -200px;
+            z-index: 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-green);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0, 204, 102, 0.2);
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-green);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 204, 102, 0.3);
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-blue);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(51, 102, 204, 0.2);
+        }
+        
+        .btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(51, 102, 204, 极.3);
+        }
+        
+        .btn-secondary:hover::before {
+            left: 100%;
+        }
+        
+        .case-study-card {
+            transition: all 0.4s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            position: relative;
+        }
+        
+        .case-study-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .case-study-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .case-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 28px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-badge.primary {
+            background-color: rgba(0, 204, 102, 0.1);
+            color: var(--primary-green);
+        }
+        
+        .result-badge.secondary {
+            background-color: rgba(51, 102, 204, 0.1);
+            color: var(--primary-blue);
+        }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+        
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6); }
+            100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary-blue);
+            top: 10%;
+            left: 5%;
+            animation: float-shape 15s ease-in-out infinite;
+        }
+        
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: var(--primary-green);
+            bottom: 15%;
+            right: 10%;
+            animation: float-shape 12s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float-shape {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(20px, 30px) rotate(120deg); }
+            66% { transform: translate(-15px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        .nav-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 极;
+            opacity: 0.1;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 极 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 极 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31极1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2极.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .footer-links a {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-links a:hover::before {
+            width: 100%;
+        }
+        
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-blue);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid var(--primary-green);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(odd)::after {
+            right: -13px;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -13px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Ajustes de responsividad */
+        @media (max-width: 1024px) {
+            .stats-number {
+                font-size: 2rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item:nth-child(odd)::after, 
+            .timeline-item:nth-child(even)::after {
+                left: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-gradient {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+            .stats-number {
+                font-size: 2rem;
+            }
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero-gradient {
+                text-align: center;
+            }
+            .case-study-card {
+                margin: 0 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5493491541201" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Navigation -->
+    <nav class="bg-white nav-shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <div class="h-12 w-12 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                            <img src="/img/Logo-Ninapochona-Automatizacion.inteligente-IA.png">
+                        </div>
+                    </a>
+                    <span class="text-xl font-bold text-gray-800">Ninapochona</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="text-gray-800 hover:text-green-600 transition font-medium">Inicio</a>
+                    <a href="/servicios.html" class="text-gray-800 hover:text-green-600 transition font-medium">Servicios</a>
+                    <a href="/index.html#funcionamiento" class="text-gray-800 hover:text-green-600 transition font-medium">¿Cómo Funciona?</a>
+                    <a href="/casos-exitos.html" class="text-gray-800 hover:text-green-600 transition font-medium font-bold">Casos de Éxito</a>
+                    <a href="/recursos.html" class="text-gray-800 hover:text-green-600 transition font-medium">Recursos</a>
+                    <a href="/index.html#contacto" class="btn-primary px-5 py-2.5 rounded-full font-medium">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient section-padding">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 leading-tight">Casos de <span class="gradient-text">Éxito</span></h1>
+                <p class="text-xl text-gray-600 mb-8">Descubre cómo empresas como la tuya transformaron sus procesos con nuestros agentes de automatización</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#casos" class="btn-primary px-8 py-4 rounded-full text-center text-lg font-semibold">Ver Casos</a>
+                    <a href="#contacto" class="btn-secondary px-8 py-4 rounded-full text-center text-lg font-semibold">Quiero mi éxito</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="stats-number">+150</div>
+                    <p class="text-gray-600 font-medium">Proyectos exitosos</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">92%</div>
+                    <p class="text-gray-600 font-medium">Clientes satisfechos</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">5,000+</div>
+                    <p class="text-gray-600 font-medium">Horas ahorradas</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">45%</div>
+                    <p class="text-gray-600 font-medium">Aumento de eficiencia promedio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="casos" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Historias de Transformación Real</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Empresas que lograron resultados extraordinarios con la automatización inteligente</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Restaurante" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Restaurante "El Buen Sabor"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Implementación de agente de reservas automatizado que gestiona solicitudes 24/7 desde múltiples plataformas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">+35% reservas</span>
+                            <span class="result-badge secondary">0 errores</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"Antes perdíamos hasta 15 reservas por semana por no responder a tiempo. Ahora el agente gestiona todo automáticamente con nuestro tono y estilo."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- María G., Propietaria</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 5 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 6 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 7 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 8 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 9 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 10 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 11 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 12 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 13 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 14 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 15 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 16 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 17 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 18 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 19 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 20 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 21 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 22 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 23 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 24 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 25 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 26 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 27 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 28 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 29 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 30 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 31 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case Study 32 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 33 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 34 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 35 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 36 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 37 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 38 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 39 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 40 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 41 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 42 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 43 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 44 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3f极8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - Agencia Digital" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">Agencia Digital "NextLevel"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Automatización de reportes de métricas y KPIs para clientes de marketing digital.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">8h ahorradas/semana</span>
+                            <span class="result-badge secondary">+3 clientes</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Carlos R., CEO</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-primary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 45 -->
+                <div class="case-study-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Caso de éxito - E-commerce" class="w-full h-48 object-cover">
+                    <div class="case-study-content">
+                        <div class="case-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">E-commerce "Moda Latina"</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sincronización automática entre Shopify y Google Calendar para gestión de pedidos y entregas.</p>
+                        
+                        <div class="mb-4">
+                            <span class="result-badge primary">100% sin errores</span>
+                            <span class="result-badge secondary">+25% ventas</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"El MCP Server eliminó todos nuestros errores de programación. Ahora cada pedido se agenda automáticamente sin conflictos y nuestros clientes reciben confirmaciones inmediatas."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Andrea L., Fundadora</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#contacto" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Quiero estos resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contacto" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">Eso es justo lo que necesito. ¿Podemos hablar?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Cases Section -->
+    <section id="mas-casos" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Más Empresas, Más Éxitos</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Descubre cómo diferentes industrias se benefician con la automatización</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Case Study 4 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mr-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Academia "AprenderPlus"</h3>
+                            <p class="text-gray-600">Educación en línea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Desafío</h4>
+                        <p class="text-gray-600">Gestión manual de inscripciones, recordatorios de clases y seguimiento de estudiantes, consumiendo 20+ horas semanales.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Solución</h4>
+                        <p class="text-gray-600">Implementación de un agente automatizado para gestión integral de estudiantes, desde inscripción hasta seguimiento post-curso.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-green-600">65%</div>
+                            <div class="text-sm text-gray-600">Reducción de tiempo administrativo</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-green-600">40%</div>
+                            <div class="text-sm text-gray-600">Aumento de retención</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="text-sm text-green-800 italic">"El agente no solo nos ahorra tiempo, sino que mejoró la experiencia de nuestros estudiantes con recordatorios personalizados y seguimiento automatizado."</p>
+                    </div>
+                </div>
+                
+                <!-- Case Study 5 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mr-4">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Clínica "SaludPerfect"</h3>
+                            <p class="text-gray-600">Servicios de salud</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Desafío</h4>
+                        <p class="text-gray-600">Sistema de citas obsoleto que causaba confusiones, dobles reservas y pérdida de pacientes potenciales.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Solución</h4>
+                        <p class="text-gray-600">Agente de citas inteligente con integración a WhatsApp, recordatorios automáticos y gestión de cancelaciones.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-blue-600">90%</div>
+                            <div class="text-sm text-gray-600">Reducción de errores</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-blue-600">28%</div>
+                            <div class="text-sm text-gray-600">Más pacientes/mes</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-sm text-blue-800 italic">"La automatización de nuestro sistema de citas transformó nuestra operación. Ahora tenemos cero errores de programación y nuestros pacientes aman la experiencia."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Journey Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">El Viaje de Transformación</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Cómo llevamos a cada cliente desde el desafío inicial hasta el éxito demostrable</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">1. Diagnóstico</h3>
+                        <p class="text-gray-600">Analizamos tus procesos actuales y identificamos las oportunidades de automatización con mayor impacto.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2. Diseño</h3>
+                        <p class="text-gray-600">Creamos una solución personalizada que se adapta a tus flujos de trabajo y necesidades específicas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">3. Implementación</h3>
+                        <p class="text-gray-600">Desarrollamos e integramos el agente automatizado en tu infraestructura existente con mínima interrupción.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">4. Capacitación</h3>
+                        <p class="text-gray-600">Entrenamos a tu equipo para que aproveche al máximo la nueva herramienta y adopte los nuevos procesos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">5. Optimización</h3>
+                        <p class="text-gray-600">Ajustamos y mejoramos continuamente based on feedback y resultados para maximizar el ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section py-16 text-white">
+        <div class="cta-pattern"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para escribir tu propio caso de éxito?</h2>
+                <p class="text-xl mb-8 opacity-90">Agendá una consulta gratuita y descubrí cómo podemos transformar tu negocio</p>
+                <a href="https://wa.me/5493491541201" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100 transition shadow-lg">Agendar consulta gratuita</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contacto" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">¿Quieres ser nuestro próximo caso de éxito?</h2>
+                    <p class="text-xl text-gray-600">Completá el formulario y nos pondremos en contacto a la brevedad</p>
+                </div>
+                
+                <form class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre completo">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-极 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="business" class="block text-gray-700 font-medium mb-2">Tu negocio</label>
+                        <input type="text" id="business" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="¿A qué te dedicás?">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="challenge" class="block text-gray-700 font-medium mb-2">Tu mayor desafío</label>
+                        <textarea id="challenge" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="¿Qué proceso te gustaría automatizar?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-full py-4 rounded-lg text-lg font-semibold">Quiero mi caso de éxito</button>
+                </form>
+                
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h3>
+                        <p class="text-gray-600 mb-2">+54 9 3491 541201</p>
+                        <a href="https://wa.me/5493491541201" class="text-blue-600 font-medium hover:underline">Enviar mensaje</a>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Email</h3>
+                        <p class="text-gray-600 mb-2">exito@ninapochona.com</p>
+                        <a href="mailto:exito@ninapochona.com" class="text-blue-600 font-medium hover:underline">Enviar email</a>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="w-16 h-16 mx-auto bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ubicación</h3>
+                        <p class="text-gray-600">Argentina</p>
+                        <p class="text-gray-600">Atendemos clientes de todo el mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="h-10 w-10 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            <img src="/img/Logo-Ninapochona-Automatizacion.inteligente-IA.png">
+                        </div>
+                        <span class="text-xl font-bold">Ninapochona</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Automatización con alma para tu negocio. Agentes automatizados con IA diseñados específicamente para potenciar tu empresa.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Servicios</h3>
+                    <ul class="space-y-3 footer-links">
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Todos los servicios</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Agente Appointment Setter</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Asistente Personal para CEOs</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Creador de Blog SEO Expert</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Extractor KPIs de Meta Ads</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Enlaces útiles</h3>
+                    <ul class="space-y-3 footer-links">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="/index.html#servicios" class="text-gray-400 hover:text-white">Servicios</a></li>
+                        <li><a href="/index.html#funcionamiento" class="text-gray-400 hover:text-white">¿Cómo Funciona?</a></li>
+                        <li><a href="/index.html#casos.exitos" class="text-gray-400 hover:text-white font-bold">Casos de Éxito</a></li>
+                        <li><a href="/index.html#recursos" class="text-gray-400 hover:text-white">Recursos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Legal</h3>
+                    <ul class="space-y-3 footer-links">
+                        <li><a href="/Términos-y-Condiciones/términos-y-condiciones.html" class="text-gray-400 hover:text-white">Términos y Condiciones</a></li>
+                        <li><a href="/Política-de-Privacidad/política-de-privacidad.html" class="text-gray-400 hover:text-white">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Ninapochona. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // This would toggle a mobile menu - functionality to be expanded
+            alert('Menú móvil - En desarrollo');
+        });
+        
+        // Form submission prevention for demo
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto para crear tu caso de éxito.');
+            this.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

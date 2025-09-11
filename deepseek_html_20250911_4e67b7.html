@@ -466,8 +466,8 @@
             margin-bottom: 0.5rem;
             color: var(--primary-blue);
         }
-
-         /* Mobile Menu Styles */
+        
+        /* Mobile Menu Styles */
         #mobileMenu {
             display: none;
             position: fixed;
@@ -596,12 +596,12 @@
         <button id="closeMobileMenu" class="absolute top-4 right-4 text-gray-800">
             <i class="fas fa-times text-2xl"></i>
         </button>
-        <a href="#inicio" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Inicio</a>
-        <a href="#servicios" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Servicios</a>
-        <a href="#funcionamiento" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">¿Cómo Funciona?</a>
-        <a href="#casos" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Casos de Éxito</a>
-        <a href="#blog" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Recursos</a>
-        <a href="#contacto" class="btn-primary px-6 py-3 rounded-full text-xl">Contacto</a>
+        <a href="#inicio" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Inicio</a>
+        <a href="#servicios" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Servicios</a>
+        <a href="#funcionamiento" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">¿Cómo Funciona?</a>
+        <a href="#casos" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Casos de Éxito</a>
+        <a href="#blog" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Recursos</a>
+        <a href="#contacto" class="btn-primary px-6 py-3 rounded-full text-xl mobile-menu-link">Contacto</a>
     </div>
     
     <!-- Hero Section -->
@@ -782,7 +782,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Casos de éxito</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Lo que dicen nuestros clientes sobre la transformación de sus negocios</p>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Lo que dicen nuestros clients sobre la transformación de sus negocios</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -834,15 +834,15 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
+                <!-- Testimonial 3 -->
                 <div class="testimonial-card p-6">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white font-bold text-lg mr-3">
-                            C
+                        <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg mr-3">
+                            L
                         </div>
                         <div>
-                            <h4 class="font-bold text-gray-800">Carlos R.</h4>
-                            <p class="text-sm text-gray-600">CEO de Agencia Digital</p>
+                            <h4 class="font-bold text-gray-800">Laura M.</h4>
+                            <p class="text-sm text-gray-600">Tienda Online</p>
                         </div>
                     </div>
                     <div class="text-yellow-400 mb-4">
@@ -852,9 +852,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"El extractor de KPIs nos ahorra más de 8 horas semanales en reporting. Los informes automáticos con análisis inteligente nos permiten tomar decisiones más rápidas y basadas en datos reales."</p>
-                    <div class="bg-green-50 p-3 rounded-lg">
-                        <p class="text-sm text-green-800"><strong>Resultado:</strong> 8h semanales ahorradas</p>
+                    <p class="text-gray-600 italic mb-4">"El agente de contenido SEO aumentó nuestro tráfico orgánico en un 300% en solo 3 meses. Ahora nuestro blog se actualiza automáticamente con contenido relevante."</p>
+                    <div class="bg-purple-50 p-3 rounded-lg">
+                        <p class="text-sm text-purple-800"><strong>Resultado:</strong> +300% tráfico orgánico</p>
                     </div>
                 </div>
             </div>
@@ -866,8 +866,7 @@
     </section>
     
     <!-- Resources Preview Section -->
-    <section id="blog" class="section-padding bg-gray-50">
-    <section class="section-padding bg-white">
+    <section id="blog" class="section-padding bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Recursos de Automatización</h2>
@@ -922,7 +921,6 @@
                 <a href="blog.html" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">Explorar todos los recursos</a>
             </div>
         </div>
-    </section>
     </section>
     
     <!-- CTA Section -->
@@ -1093,7 +1091,7 @@
     </footer>
     
     <script>
-            // Mobile menu functionality
+        // Mobile menu functionality
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const closeMobileMenu = document.getElementById('closeMobileMenu');
         const mobileMenu = document.getElementById('mobileMenu');

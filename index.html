@@ -884,7 +884,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Guía: Automatización para PYMES</h3>
                         <p class="text-gray-600 mb-4 flex-grow">Los 5 procesos que toda pequeña empresa debería automatizar primero para ahorrar tiempo y recursos.</p>
-                        <a href="blog/automatizapyme.html" class="btn-secondary block text-center px-4 py-2.5 rounded-full mt-auto">Leer más</a>
+                        <a href="/blog/Guía-Practica/automatizacion-pymes-ninapochona.html" class="btn-secondary block text-center px-4 py-2.5 rounded-full mt-auto">Leer más</a>
                     </div>
                 </div>
                 
@@ -898,7 +898,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Webinar: n8n para No-Técnicos</h3>
                         <p class="text-gray-600 mb-4 flex-grow">Aprende a crear tus primeros flujos de automatización sin saber programar. Incluye ejemplos prácticos.</p>
-                        <a href="webinars/n8n-no-tecnicos.html" class="btn-primary block text-center px-4 py-2.5 rounded-full mt-auto">Ver grabación</a>
+                        <a href="/blog/Tutorial-paso-a-paso/automatizacionnotecnico.html" class="btn-primary block text-center px-4 py-2.5 rounded-full mt-auto">Ver grabación</a>
                     </div>
                 </div>
                 
@@ -923,17 +923,28 @@
         </div>
     </section>
     
-    <!-- CTA Section -->
-    <section class="cta-section py-16 text-white">
+        <!-- CTA Section -->
+        <section class="cta-section py-16 text-white">
         <div class="cta-pattern"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para automatizar tu negocio?</h2>
-                <p class="text-xl mb-8 opacity-90">Agendá una consulta gratuita y descubrí cómo nuestros agentes pueden potenciar tu empresa</p>
-                <a href="https://wa.me/5493491541201" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100 transition shadow-lg">Agendar consulta gratuita</a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para automatizar tu negocio?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Agendá una consulta gratuita y descubrí cómo nuestros agentes pueden potenciar tu empresa
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/5493491541201"
+                class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-gray-100 transition shadow-lg">
+                Agendar consulta gratuita
+                </a>
+                <a href="https://chat.whatsapp.com/ISemwE9cvSu68QVLrZeuTA" target="_blank"
+                class="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold inline-block hover:bg-green-700 transition shadow-lg">
+                Unirme a la comunidad
+                </a>
+            </div>
             </div>
         </div>
-    </section>
+        </section>
     
     <!-- FAQ Section -->
     <section class="section-padding bg-white">
@@ -962,7 +973,7 @@
     </section>
     
     <!-- Contact Section -->
-    <section id="contacto" class="section-padding bg-gray-50">
+   <!-- <section id="contacto" class="section-padding bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
@@ -993,7 +1004,74 @@
                     </div>
                     
                     <button type="submit" class="btn-primary w-full py-4 rounded-lg text-lg font-semibold">Enviar consulta</button>
-                </form>
+                </form>-->
+
+                <!-- Contact Section -->
+                <section id="contacto" class="section-padding bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Contactanos</h2>
+                        <p class="text-xl text-gray-600">Completá el formulario y nos pondremos en contacto a la brevedad</p>
+                    </div>
+
+                    <form class="bg-white p-8 rounded-2xl shadow-lg" onsubmit="enviarWhatsApp(); return false;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Tu nombre completo">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="tu@email.com">
+                        </div>
+                        </div>
+
+                        <div class="mb-6">
+                        <label for="business" class="block text-gray-700 font-medium mb-2">Tu negocio</label>
+                        <input type="text" id="business" name="business"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="¿A qué te dedicás?">
+                        </div>
+
+                        <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Contanos sobre tus necesidades y desafíos..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                        class="btn-primary w-full py-4 rounded-lg text-lg font-semibold bg-blue-600 text-white hover:bg-blue-700 transition">
+                        Enviar consulta
+                        </button>
+                    </form>
+                    </div>
+                </div>
+                </section>
+
+                <!-- WhatsApp Redirection Script -->
+                <script>
+                function enviarWhatsApp() {
+                    const nombre = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const negocio = document.getElementById('business').value.trim();
+                    const mensaje = document.getElementById('message').value.trim();
+
+                    const texto = `Hola, soy ${nombre} (${email}).%0A` +
+                                `Mi negocio: ${negocio}%0A` +
+                                `Consulta: ${mensaje}`;
+
+                    const numeroWhatsApp = '5493491541201'; // ← Reemplazá con tu número (ej: 5491134567890)
+                    const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+
+                    window.open(url, '_blank');
+                }
+                </script>
                 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div class="p-6">
@@ -1002,7 +1080,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h3>
                         <p class="text-gray-600 mb-2">+54 9 3491 507341</p>
-                        <a href="https://wa.me/5493491507341" class="text-blue-600 font-medium hover:underline">Enviar mensaje</a>
+                        <a href="https://wa.me/5493491541201" class="text-blue-600 font-medium hover:underline">Enviar mensaje</a>
                     </div>
                     
                     <div class="p-6">
@@ -1010,8 +1088,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Email</h3>
-                        <p class="text-gray-600 mb-2">info@ninapochona.com</p>
-                        <a href="mailto:info@ninapochona.com" class="text-blue-600 font-medium hover:underline">Enviar email</a>
+                        <p class="text-gray-600 mb-2">ninapochonadev@gmail.com</p>
+                        <a href="mailto:ninapochonadev@gmail.com" class="text-blue-600 font-medium hover:underline">Enviar email</a>
                     </div>
                     
                     <div class="p-6">
@@ -1039,7 +1117,7 @@
                         <span class="text-xl font-bold">Ninapochona</span>
                     </div>
                     <p class="text-gray-400 mb-6">Automatización con alma para tu negocio. Agentes automatizados con IA diseñados específicamente para potenciar tu empresa.</p>
-                                    <div class="flex space-x-4">
+                <div class="flex space-x-4">
                     <a href="https://www.facebook.com/tuusuario" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://wa.me/5493851234567?text=Hola%20Alejandro%2C%20vi%20tu%20perfil%20y%20me%20interesa%20automatizar%20mi%20negocio.%20%C2%BFPod%C3%A9s%20ayudarme%3F" class="flex items-center gap-2 text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.tiktok.com/@tuusuario" class="text-gray-400 hover:text-white transition"><i class="fab fa-tiktok"></i></a>
@@ -1070,19 +1148,19 @@
                         <li><a href="#funcionamiento" class="text-gray-400 hover:text-white">¿Cómo Funciona?</a></li>
                         <li><a href="#casos" class="text-gray-400 hover:text-white">Casos de Éxito</a></li>
                         <li><a href="#contacto" class="text-gray-400 hover:text-white">Contacto</a></li>
-                        <li><a href="recursos.html" class="text-gray-400 hover:text-white">Recursos</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white">Recursos</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-bold mb-6">Suscribite al newsletter</h3>
-                    <p class="text-gray-400 mb-4">Recibí tips de automatización y casos de estudio directamente en tu email.</p>
-                    <form class="flex flex-col space-y-3">
-                        <input type="email" placeholder="Tu email" class="px-4 py-2.5 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <button type="submit" class="btn-primary px-4 py-2.5 rounded-lg text-center">Suscribirme</button>
-                    </form>
-                </div>
-            </div>
+                   <div>
+                    <h3 class="text-lg font-bold mb-6">Unite a la comunidad</h3>
+                    <p class="text-gray-400 mb-4"> Recibí tips de automatización, plantillas, casos de estudio y herramientas exclusivas directamente en nuestro grupo de WhatsApp.</p>
+                    <a href="https://chat.whatsapp.com/ISemwE9cvSu68QVLrZeuTA" target="_blank"
+                class="btn-primary px-4 py-2.5 rounded-lg text-center inline-block text-white bg-green-600 hover:bg-green-700 transition">
+                Unirme al grupo
+            </a>
+        </div>
+    </div>
             
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
                 <p>&copy; 2025 Ninapochona. Todos los derechos reservados.</p>

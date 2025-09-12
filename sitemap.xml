@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.ninapochona.com/</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.ninapochona.online/index.html</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.ninapochona.com/servicios</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.ninapochona.com/recursos</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.ninapochona.online/blog.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ninapochona.com/blog</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.ninapochona.com/blog/como-elegir-agente-automatizacion</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.ninapochona.online/blog/Casos%20de%20Estudio/caso-exito-pyme-reduccion-tiempo-facturacion-ia-automatizacion-2025.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.ninapochona.com/blog/caso-estudio-pyme-facturacion-ia</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.ninapochona.com/blog/integracion-ia-procesos-comerciales</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.ninapochona.com/contacto</loc>
-    <lastmod>2023-11-15</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.ninapochona.online/Gu%C3%ADa-Practica/automatizacion-pymes-ninapochona.html</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Gu%C3%ADa-Practica/comoelegiragente.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Gu%C3%ADa-Practica/Tutorial-paso-a-paso</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Gu%C3%ADa-Practica/automatizaciontecnocentro.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Gu%C3%ADa-Practica/integrarn8n.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Casos-Exitos/casos-exitos-automatizaci%C3%B3n-con-inteligencia-artificial.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Servicios-completos/servicios-automatizacion-inteligencia-artificial.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/Pol%C3%ADtica%20de%20Privacidad/politica-de-privacidad.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.ninapochona.online/T%C3%A9rminos-y-condiciones/terminos-y-condiciones.html</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>

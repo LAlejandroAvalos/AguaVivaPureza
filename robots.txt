@@ -1,5 +1,12 @@
 User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /search/
-Sitemap: https://www.ninapochona.com/sitemap.xml
+Allow: /index.html
+Allow: /blog.html
+Allow: /Guía-Practica/
+Allow: /Casos-Exitos/
+Allow: /Servicios-completos/
+Allow: /Política de Privacidad/
+Allow: /Términos-y-condiciones/
+
+Disallow: /img/
+
+Sitemap: https://www.ninapochona.online/sitemap.xml

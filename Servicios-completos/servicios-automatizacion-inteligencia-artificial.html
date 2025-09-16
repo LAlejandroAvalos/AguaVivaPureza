@@ -439,24 +439,29 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      
-
                 <!-- 🔍 Buscador + Etiquetas -->
-<div class="mb-10">
-  <input type="search" id="buscador" placeholder="Buscar agente..." oninput="buscarAgente()" class="w-full p-3 mb-6 rounded-lg border border-gray-300" />
+                <div class="mb-10">
+                <input type="search" id="buscador" placeholder="Buscar agente..." oninput="buscarAgente()" class="w-full p-3 mb-6 rounded-lg border border-gray-300" />
 
-  <div class="flex flex-wrap gap-2">
-    <button onclick="filtrarPorCategoria('automatizacion')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚙️ Automatización</button>
-    <button onclick="filtrarPorCategoria('psicologia')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧬 Psicología</button>
-    <button onclick="filtrarPorCategoria('seo')" class="btn-secondary px-4 py-2 rounded-full text-sm">📈 SEO & Contenido</button>
-    <button onclick="filtrarPorCategoria('branding')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎨 Branding</button>
-    <button onclick="filtrarPorCategoria('legal')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚖️ Legal</button>
-    <button onclick="filtrarPorCategoria('transcripcion')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎙️ Transcripción</button>
-    <button onclick="filtrarPorCategoria('mvp')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧪 MVPs</button>
-    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">📲 Telegram</button>
-    <button onclick="filtrarPorCategoria('todos')" class="btn-secondary px-4 py-2 rounded-full text-sm">🌐 Ver todos</button>
-  </div>
-</div>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filtrarPorCategoria('automatizacion')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚙️ Automatización</button>
+                    <button onclick="filtrarPorCategoria('psicologia')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧬 Psicología</button>
+                    <button onclick="filtrarPorCategoria('seo')" class="btn-secondary px-4 py-2 rounded-full text-sm">📈 SEO & Contenido</button>
+                    <button onclick="filtrarPorCategoria('branding')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎨 Branding</button>
+                    <button onclick="filtrarPorCategoria('legal')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚖️ Legal</button>
+                    <button onclick="filtrarPorCategoria('transcripcion')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎙️ Transcripción</button>
+                    <button onclick="filtrarPorCategoria('mvp')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧪 MVPs</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🏠 Inmobiliarias</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧘 Clínicas & Centro de Bienestar</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">📚 Escuelas & Formación online</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🛍️ E-COMMERCE & Retail local</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎤 Influencers & Marca Personal</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧑‍💼 COACHES & Consultores</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">🏥 Centros medicos & Psicólogos</button>
+                    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">💼 Agencias & Freelancers</button>
+                    <button onclick="filtrarPorCategoria('todos')" class="btn-secondary px-4 py-2 rounded-full text-sm">🌐 Ver todos</button>
+                </div>
+                </div>
 
 
                 <!-- Service Card 1 -->
@@ -1682,7 +1687,6 @@
 
 
 
-
 <script>
 function buscarAgente() {
   const input = document.getElementById('buscador').value.toLowerCase();
@@ -1706,5 +1710,7 @@ function filtrarPorCategoria(categoria) {
   });
 }
 </script>
+
+
 </body>
 </html>

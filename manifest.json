@@ -1,0 +1,43 @@
+{
+  "name": "Ninapochona Agente AI - 1.1.2",
+  "short_name": "Automatizacion de procesos con Inteligencia Artificial IA",
+  "description": "Automatización con alma: tecnología que respeta tu esencia y potencia tu visión. Agentes inteligentes diseñados a medida para escalar tu negocio con precisión, empatía y eficiencia. Solicitá tu agente personalizado, Soluciones con IA que entienden tu ritmo: automatizan lo complejo, amplifican tu impacto y se adaptan a cualquier estilo de vida, profesionales, o modelo de negocio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/img/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/favicon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Inicio",
+      "short_name": "Inicio",
+      "description": "Volver a la página principal.",
+      "url": "/",
+      "icons": [{ "src": "/img/favicon-64x64.png", "sizes": "64x64", "type": "image/png" }]
+    },
+    {
+      "name": "Agentes",
+      "short_name": "Agentes",
+      "description": "Explorá el ecosistema modular.",
+      "url": "/agentes",
+      "icons": [{ "src": "/img/favicon-64x64.png", "sizes": "64x64", "type": "image/png" }]
+    }
+  ]
+}

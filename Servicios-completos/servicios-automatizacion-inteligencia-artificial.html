@@ -437,11 +437,31 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Todos Nuestros Agentes Automatizados</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">Soluciones diseñadas para optimizar tus procesos, ahorrar tiempo y aumentar tu rentabilidad</p>
             </div>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      
+
+                <!-- 🔍 Buscador + Etiquetas -->
+<div class="mb-10">
+  <input type="search" id="buscador" placeholder="Buscar agente..." oninput="buscarAgente()" class="w-full p-3 mb-6 rounded-lg border border-gray-300" />
+
+  <div class="flex flex-wrap gap-2">
+    <button onclick="filtrarPorCategoria('automatizacion')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚙️ Automatización</button>
+    <button onclick="filtrarPorCategoria('psicologia')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧬 Psicología</button>
+    <button onclick="filtrarPorCategoria('seo')" class="btn-secondary px-4 py-2 rounded-full text-sm">📈 SEO & Contenido</button>
+    <button onclick="filtrarPorCategoria('branding')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎨 Branding</button>
+    <button onclick="filtrarPorCategoria('legal')" class="btn-secondary px-4 py-2 rounded-full text-sm">⚖️ Legal</button>
+    <button onclick="filtrarPorCategoria('transcripcion')" class="btn-secondary px-4 py-2 rounded-full text-sm">🎙️ Transcripción</button>
+    <button onclick="filtrarPorCategoria('mvp')" class="btn-secondary px-4 py-2 rounded-full text-sm">🧪 MVPs</button>
+    <button onclick="filtrarPorCategoria('telegram')" class="btn-secondary px-4 py-2 rounded-full text-sm">📲 Telegram</button>
+    <button onclick="filtrarPorCategoria('todos')" class="btn-secondary px-4 py-2 rounded-full text-sm">🌐 Ver todos</button>
+  </div>
+</div>
+
+
                 <!-- Service Card 1 -->
-                <div class="service-card">
-                    <div class="service-card-content">
+                <div class="service-card" data-categoria="automatizacion">
+                        <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-calendar-check"></i>
                         </div>
@@ -457,7 +477,7 @@
                 </div>
                 
                 <!-- Service Card 2 -->
-                <div class="service-card">
+                <div class="service-card" data-categoria="automatizacion">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-user-tie"></i>
@@ -474,7 +494,7 @@
                 </div>
                 
                 <!-- Service Card 3 -->
-                <div class="service-card">
+                <div class="service-card" data-categoria="automatizacion">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-blog"></i>
@@ -491,7 +511,7 @@
                 </div>
                 
                 <!-- Service Card 4 -->
-                <div class="service-card">
+                <div class="service-card" data-categoria="automatizacion">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-chart-line"></i>
@@ -508,7 +528,7 @@
                 </div>
                 
                 <!-- Service Card 5 -->
-                <div class="service-card">
+                <div class="service-card" data-categoria="legal">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-calendar-alt"></i>
@@ -525,7 +545,7 @@
                 </div>
                 
                 <!-- Service Card 6 -->
-                <div class="service-card">
+                <div class="service-card agente-personalizado" data-categoria="todos">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-robot"></i>
@@ -542,7 +562,7 @@
                 </div>
 
                 <!-- Service Card 7 -->
-                <div class="service-card">
+                <div class="service-card" data-categoria="automatizacion">
                     <div class="service-card-content">
                         <div class="service-icon">
                             <i class="fas fa-shopping-cart"></i>
@@ -1356,10 +1376,12 @@
             </div>
         </div>
 
-            </div>
+           </div>
         </div>
     </section>
-    
+  
+
+
     <!-- How it Works Section -->
     <section class="section-padding bg-white">
         <div class="container mx-auto px-4">
@@ -1653,5 +1675,36 @@
         });
    
     </script>
+
+
+
+
+
+
+
+
+<script>
+function buscarAgente() {
+  const input = document.getElementById('buscador').value.toLowerCase();
+  const cards = document.querySelectorAll('.service-card');
+  cards.forEach(card => {
+    const texto = card.innerText.toLowerCase();
+    card.style.display = texto.includes(input) ? 'block' : 'none';
+  });
+}
+
+function filtrarPorCategoria(categoria) {
+  const cards = document.querySelectorAll('.service-card');
+  cards.forEach(card => {
+    const cat = card.getAttribute('data-categoria');
+    const esPersonalizado = card.classList.contains('agente-personalizado');
+    if (categoria === 'todos' || cat === categoria || esPersonalizado) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
 </body>
 </html>

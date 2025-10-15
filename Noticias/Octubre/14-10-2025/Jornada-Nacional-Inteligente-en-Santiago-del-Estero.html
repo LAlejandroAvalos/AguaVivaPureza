@@ -153,26 +153,50 @@
     <a href="https://wa.me/5493491541201" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+  <!--Icono pestaña-->
+                <!-- Iconos para pestaña -->
+            <link rel="icon" type="img/png" sizes="16x16" href="/img/favicon-16x16.png">
+            <link rel="icon" type="img/png" sizes="32x32" href="/img/favicon-32x32.png">
+            <link rel="icon" type="img/png" sizes="48x48" href="/img/favicon-48x48.png">
+            <link rel="icon" type="img/png" sizes="64x64" href="/img/favicon-64x64.png">
+            <link rel="icon" type="img/png" sizes="256x256" href="/img/favicon-256x256.png">
+            <link rel="shortcut icon" href="/img/favicon-32x32.png">
+
+            <!-- Apple Touch Icons -->
+            <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+
+            <!-- Android Chrome -->
+            <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+
+            <!-- Manifest para PWA -->
+            <link rel="manifest" href="/manifest.json">
+    
     
     <!-- Navigation -->
     <nav class="bg-white nav-shadow sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <a href='/'>
+                    <a href="index.html">
                         <div class="h-12 w-12 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
                             <img src="/img/Logo-Ninapochona-Automatizacion.inteligente-IA.png" alt="Logo Ninapochona">
                         </div>
                     </a>
                     <span class="text-xl font-bold text-gray-800">Ninapochona</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/#inicio" class="text-gray-800 hover:text-green-600 transition font-medium">Inicio</a>
-                    <a href="/#servicios" class="text-gray-800 hover:text-green-600 transition font-medium">Servicios</a>
+                 <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-green-600 transition font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-800 hover:text-green-600 transition font-medium">Servicios</a>
                     <a href="#funcionamiento" class="text-gray-800 hover:text-green-600 transition font-medium">¿Cómo Funciona?</a>
                     <a href="#casos" class="text-gray-800 hover:text-green-600 transition font-medium">Casos de Éxito</a>
-                    <a href="/blog/" class="text-gray-800 hover:text-green-600 transition font-medium">Recursos</a>
-                    <a href="/#contacto" class="btn-primary px-4 py-2 rounded-full font-medium">Contacto</a>
+                    <a href="#blog" class="text-gray-800 hover:text-green-600 transition font-medium">Recursos</a>
+                    <a href="/Noticias/Actualidad-Inteligencia-Artificial-Mundial.html" class="text-gray-800 hover:text-green-600 transition font-medium">Noticias</a>
+                    <a href="#comunidad" class="text-gray-800 hover:text-green-600 transition font-medium">Comunidad</a>
+                    <a href="#contacto" class="btn-primary px-5 py-2.5 rounded-full font-medium">Contacto</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-gray-800 focus:outline-none" id="mobileMenuButton">
@@ -188,12 +212,14 @@
         <button id="closeMobileMenu" class="absolute top-4 right-4 text-gray-800">
             <i class="fas fa-times text-2xl"></i>
         </button>
-        <a href="/#inicio" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Inicio</a>
-        <a href="/#servicios" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Servicios</a>
-        <a href="/#funcionamiento" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">¿Cómo Funciona?</a>
-        <a href="/#casos" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Casos de Éxito</a>
-        <a href="/blog" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition">Recursos</a>
-        <a href="/#contacto" class="btn-primary px-6 py-3 rounded-full text-xl">Contacto</a>
+         <a href="#inicio" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Inicio</a>
+        <a href="#servicios" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Servicios</a>
+        <a href="#funcionamiento" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">¿Cómo Funciona?</a>
+        <a href="#casos" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Casos de Éxito</a>
+        <a href="#blog" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Recursos</a>
+        <a href="/Noticias/Actualidad-Inteligencia-Artificial-Mundial.html" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Noticias</a>
+        <a href="#comunidad" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Comunidad</a>
+        <a href="#contacto" class="btn-primary px-6 py-3 rounded-full text-xl mobile-menu-link">Contacto</a>
     </div>
     
     <!-- Article Header -->

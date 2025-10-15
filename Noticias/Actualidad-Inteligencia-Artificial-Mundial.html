@@ -437,11 +437,33 @@
         }
     </style>
 </head>
-<body class="antialiased">
+<body><!--class="antialiased"-->
     <!-- WhatsApp Button -->
     <a href="https://wa.me/5493491541201" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+       <!--Icono pestaña-->
+                <!-- Iconos para pestaña -->
+            <link rel="icon" type="img/png" sizes="16x16" href="/img/favicon-16x16.png">
+            <link rel="icon" type="img/png" sizes="32x32" href="/img/favicon-32x32.png">
+            <link rel="icon" type="img/png" sizes="48x48" href="/img/favicon-48x48.png">
+            <link rel="icon" type="img/png" sizes="64x64" href="/img/favicon-64x64.png">
+            <link rel="icon" type="img/png" sizes="256x256" href="/img/favicon-256x256.png">
+            <link rel="shortcut icon" href="/img/favicon-32x32.png">
+
+            <!-- Apple Touch Icons -->
+            <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+
+            <!-- Android Chrome -->
+            <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+
+            <!-- Manifest para PWA -->
+            <link rel="manifest" href="/manifest.json">
     
     <!-- Navigation -->
     <nav class="bg-white nav-shadow sticky top-0 z-50">
@@ -450,18 +472,20 @@
                 <div class="flex items-center">
                     <a href="index.html">
                         <div class="h-12 w-12 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                            <i class="fas fa-brain"></i>
+                             <img src="/img/Logo-Ninapochona-Automatizacion.inteligente-IA.png"  alt="Logo Ninapochona">
                         </div>
                     </a>
-                    <span class="text-xl font-bold text-gray-800">IA Noticias</span>
+                    <span class="text-xl font-bold text-gray-800">Ninapochona</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/index.html" class="text-gray-800 hover:text-green-600 transition font-medium font-bold">Inicio</a>
-                    <a href="/noticias.html" class="text-gray-800 hover:text-green-600 transition font-medium">Noticias</a>
-                    <a href="/tutoriales.html" class="text-gray-800 hover:text-green-600 transition font-medium">Tutoriales</a>
-                    <a href="/herramientas.html" class="text-gray-800 hover:text-green-600 transition font-medium">Herramientas</a>
-                    <a href="/eventos.html" class="text-gray-800 hover:text-green-600 transition font-medium">Eventos</a>
-                    <a href="/contacto.html" class="btn-primary px-5 py-2.5 rounded-full font-medium">Contacto</a>
+                 <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-green-600 transition font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-800 hover:text-green-600 transition font-medium">Servicios</a>
+                    <a href="#funcionamiento" class="text-gray-800 hover:text-green-600 transition font-medium">¿Cómo Funciona?</a>
+                    <a href="#casos" class="text-gray-800 hover:text-green-600 transition font-medium">Casos de Éxito</a>
+                    <a href="#blog" class="text-gray-800 hover:text-green-600 transition font-medium">Recursos</a>
+                    <a href="/Noticias/Actualidad-Inteligencia-Artificial-Mundial.html" class="text-gray-800 hover:text-green-600 transition font-medium">Noticias</a>
+                    <a href="#comunidad" class="text-gray-800 hover:text-green-600 transition font-medium">Comunidad</a>
+                    <a href="#contacto" class="btn-primary px-5 py-2.5 rounded-full font-medium">Contacto</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-gray-800 focus:outline-none mobile-menu-button">
@@ -471,6 +495,21 @@
             </div>
         </div>
     </nav>
+
+<!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-8">
+        <button id="closeMobileMenu" class="absolute top-4 right-4 text-gray-800">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+        <a href="#inicio" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Inicio</a>
+        <a href="#servicios" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Servicios</a>
+        <a href="#funcionamiento" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">¿Cómo Funciona?</a>
+        <a href="#casos" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Casos de Éxito</a>
+        <a href="#blog" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Recursos</a>
+        <a href="/Noticias/Actualidad-Inteligencia-Artificial-Mundial.html" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Noticias</a>
+        <a href="#comunidad" class="text-2xl font-medium text-gray-800 hover:text-green-600 transition mobile-menu-link">Comunidad</a>
+        <a href="#contacto" class="btn-primary px-6 py-3 rounded-full text-xl mobile-menu-link">Contacto</a>
+    </div>
     
     <!-- Hero Section -->
     <section class="hero-gradient section-padding">
@@ -516,8 +555,8 @@
     <section id="noticias" class="section-padding bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Noticias Destacadas</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Los desarrollos más importantes en inteligencia artificial que están dando forma al futuro</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Últimas Noticias</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mantente al día con los desarrollos más recientes en inteligencia artificial</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -536,13 +575,13 @@
                             <span class="category-badge secondary">OpenAI</span>
                         </div>
                         
-                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                       <!-- <div class="bg-blue-50 p-4 rounded-lg mb-4">
                             <p class="text-sm text-blue-800 italic">"Las mejoras en razonamiento lógico y capacidad de planificación representan un salto cualitativo respecto a generaciones anteriores."</p>
                             <p class="text-sm text-blue-800 font-medium mt-2">- Dr. Elena Martínez, Investigadora en IA</p>
-                        </div>
+                        </div>-->
                         
                         <div class="mt-auto">
-                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -562,13 +601,8 @@
                             <span class="category-badge secondary">Aprendizaje Profundo</span>
                         </div>
                         
-                        <div class="bg-green-50 p-4 rounded-lg mb-4">
-                            <p class="text-sm text-green-800 italic">"Esta tecnología podría revolucionar el diagnóstico precoz del cáncer, salvando millones de vidas anualmente."</p>
-                            <p class="text-sm text-green-800 font-medium mt-2">- Dr. Carlos Rodríguez, Oncólogo</p>
-                        </div>
-                        
                         <div class="mt-auto">
-                            <a href="#" class="btn-primary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                            <a href="#" class="btn-primary block text-center px-4 py-2.5 rounded-full">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -588,169 +622,13 @@
                             <span class="category-badge secondary">Ética</span>
                         </div>
                         
-                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
-                            <p class="text-sm text-blue-800 italic">"La ley busca equilibrar la innovación con la protección de derechos fundamentales, marcando un precedente global."</p>
-                            <p class="text-sm text-blue-800 font-medium mt-2">- Ana López, Especialista en Derecho Digital</p>
-                        </div>
-                        
                         <div class="mt-auto">
-                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer más</a>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-12 text-center">
-                <a href="/noticias.html" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">Ver todas las noticias</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest News Section -->
-    <section class="section-padding bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Últimas Noticias</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mantente al día con los desarrollos más recientes en inteligencia artificial</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Latest News 1 -->
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mr-4">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-800">Google lanza Gemini Pro 1.5 con contexto de 1 millón de tokens</h3>
-                            <p class="text-gray-600">Hace 2 horas</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">El nuevo modelo de Google puede procesar documentos extensos, videos completos y conjuntos de datos masivos en una sola solicitud.</p>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2">
-                            <span class="category-badge primary">Google</span>
-                            <span class="category-badge secondary">Multimodal</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
-                    </div>
-                </div>
-                
-                <!-- Latest News 2 -->
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mr-4">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-800">Análisis: Cómo la IA está transformando el sector financiero</h3>
-                            <p class="text-gray-600">Hace 5 horas</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">Estudio revela que el 78% de las instituciones financieras han implementado soluciones de IA para detección de fraudes y análisis predictivo.</p>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2">
-                            <span class="category-badge primary">Finanzas</span>
-                            <span class="category-badge secondary">Análisis</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
-                    </div>
-                </div>
-                
-                <!-- Latest News 3 -->
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mr-4">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-800">MIT desarrolla sistema de IA que aprende como un niño humano</h3>
-                            <p class="text-gray-600">Hace 1 día</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">Nueva arquitectura de aprendizaje por refuerzo imita la forma en que los niños adquieren conocimientos a través de la exploración.</p>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2">
-                            <span class="category-badge primary">Investigación</span>
-                            <span class="category-badge secondary">MIT</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
-                    </div>
-                </div>
-                
-                <!-- Latest News 4 -->
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mr-4">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-800">Expertos advierten sobre vulnerabilidades en sistemas de IA</h3>
-                            <p class="text-gray-600">Hace 1 día</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">Investigadores identifican nuevos vectores de ataque que podrían comprometer la integridad de modelos de lenguaje grandes.</p>
-                    
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2">
-                            <span class="category-badge primary">Seguridad</span>
-                            <span class="category-badge secondary">Vulnerabilidades</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="section-padding bg-gradient-to-r from-blue-50 to-green-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Explora por Categorías</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encuentra contenido específico sobre tus áreas de interés en inteligencia artificial</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Modelos de Lenguaje</h3>
-                    <p class="text-gray-600">GPT, LLMs, procesamiento de lenguaje natural</p>
-                </a>
-                
-                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mx-auto mb-4">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Visión por Computadora</h3>
-                    <p class="text-gray-600">Reconocimiento de imágenes, detección de objetos</p>
-                </a>
-                
-                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mx-auto mb-4">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Redes Neuronales</h3>
-                    <p class="text-gray-600">Arquitecturas, entrenamiento, optimización</p>
-                </a>
-                
-                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mx-auto mb-4">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ética y Regulación</h3>
-                    <p class="text-gray-600">Bias, privacidad, políticas, gobernanza</p>
-                </a>
-            </div>
         </div>
     </section>
 
@@ -772,78 +650,95 @@
         </div>
     </section>
 
-    <!-- Footer -->
+       <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center mb-6">
                         <div class="h-10 w-10 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold">
-                            <i class="fas fa-brain"></i>
+                            <img src="/img/Logo-Ninapochona-Automatizacion.inteligente-IA.png">
                         </div>
-                        <span class="text-xl font-bold">IA Noticias</span>
+                        <span class="text-xl font-bold">Ninapochona</span>
                     </div>
-                    <p class="text-gray-400 mb-4">El portal líder en noticias sobre inteligencia artificial en español.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
-                    </div>
+                    <p class="text-gray-400 mb-6">Automatización con alma para tu negocio. Agentes automatizados con IA diseñados específicamente para potenciar tu empresa.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/tuusuario" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/5493491541201?text=Hola%20Alejandro%2C%20vi%20tu%20perfil%20y%20me%20interesa%20automatizar%20mi%20negocio.%20%C2%BFPod%C3%A9s%20ayudarme%3F" class="flex items-center gap-2 text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@tuusuario" class="text-gray-400 hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://instagram.com/automatizacion.inteligente" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tuusuario" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ninapochonadev@gmail.com?subject=Automatización%20para%20mi%20negocio&body=Hola%20Alejandro%2C%20vi%20tu%20perfil%20y%20me%20interesa%20automatizar%20mi%20negocio.%20%C2%BFPod%C3%A9s%20ayudarme%3F" class="text-gray-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.youtube.com/@tuusuario" class="flex items-center gap-2 text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                </div>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-bold mb-6">Enlaces Rápidos</h3>
+                    <h3 class="text-lg font-bold mb-6">Servicios</h3>
                     <ul class="space-y-3 footer-links">
-                        <li><a href="/index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
-                        <li><a href="/noticias.html" class="text-gray-400 hover:text-white">Noticias</a></li>
-                        <li><a href="/tutoriales.html" class="text-gray-400 hover:text-white">Tutoriales</a></li>
-                        <li><a href="/herramientas.html" class="text-gray-400 hover:text-white">Herramientas</a></li>
-                        <li><a href="/eventos.html" class="text-gray-400 hover:text-white">Eventos</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Agente Appointment Setter</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Asistente Personal para CEOs</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Creador de Blog SEO Expert</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Extractor KPIs de Meta Ads</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">MCP Server</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Agente Personalizado</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-bold mb-6">Categorías</h3>
+                    <h3 class="text-lg font-bold mb-6">Enlaces útiles</h3>
                     <ul class="space-y-3 footer-links">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Modelos de Lenguaje</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Visión por Computadora</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Robótica</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Ética en IA</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Aplicaciones Empresariales</a></li>
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Servicios</a></li>
+                        <li><a href="#funcionamiento" class="text-gray-400 hover:text-white">¿Cómo Funciona?</a></li>
+                        <li><a href="#casos" class="text-gray-400 hover:text-white">Casos de Éxito</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white">Recursos</a></li>
+                        <li><a href="/Noticias/Actualidad-Inteligencia-Artificial-Mundial.html" class="text-gray-400 hover:text-white">Noticias</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white">Contacto</a></li>
+
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 class="text-lg font-bold mb-6">Contacto</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3 text-blue-500"></i>
-                            <span>info@ianoticias.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-3 text-green-500"></i>
-                            <span>+34 912 345 678</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-red-500"></i>
-                            <span>Madrid, España</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 IA Noticias. Todos los derechos reservados.</p>
-            </div>
+                   <div>
+                    <h3 class="text-lg font-bold mb-6">Unite a la comunidad</h3>
+                    <p class="text-gray-400 mb-4"> Recibí tips de automatización, plantillas, casos de estudio y herramientas exclusivas directamente en nuestro grupo de WhatsApp.</p>
+                    <a href="https://chat.whatsapp.com/ISemwE9cvSu68QVLrZeuTA" target="_blank"
+                class="btn-primary px-4 py-2.5 rounded-lg text-center inline-block text-white bg-green-600 hover:bg-green-700 transition">
+                Unirme al grupo
+            </a>
         </div>
+    </div>
+            
+             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Ninapochona - Todos los derechos reservados
+                    <a href="/Términos-y-Condiciones/términos-y-condiciones.html" class="text-gray-400 hover:text-white">- Términos y Condiciones</a>
+                    <a href="/Política-de-Privacidad/política-de-privacidad.html" class="text-gray-400 hover:text-white">- Política de Privacidad</a></p>  
+            </div>
     </footer>
 
+    
     <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            // This would toggle a mobile menu - implementation depends on your needs
-            alert('Menú móvil - En una implementación completa, esto abriría/cerraría el menú');
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close menu when clicking on links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
         });
     </script>
 </body>

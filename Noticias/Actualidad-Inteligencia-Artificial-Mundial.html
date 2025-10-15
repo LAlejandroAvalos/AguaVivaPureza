@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Noticias | Inteligencia Artificial Mundial | ninapochona.online</title>
+    <meta name="description" content="Las últimas noticias, análisis y tendencias sobre inteligencia artificial. Mantente actualizado con el mundo de la IA.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #00cc66;
+            --primary-blue: #3366cc;
+            --secondary-green: #00aa55;
+            --secondary-blue: #2a56b7;
+            --dark-blue: #1e3a8a;
+            --light-bg: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #334155;
+            overflow-x: hidden;
+        }
+        
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(51,102,204,0.1) 0%, rgba(0,204,102,0.1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(rgba(51,102,204,0.2) 0%, transparent 70%);
+            top: -250px;
+            right: -250px;
+            z-index: 0;
+        }
+        
+        .hero-gradient::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(rgba(0,204,102,0.2) 0%, transparent 70%);
+            bottom: -200px;
+            left: -200px;
+            z-index: 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-green);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0, 204, 102, 0.2);
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-green);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 204, 102, 0.3);
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary-blue);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(51, 102, 204, 0.2);
+        }
+        
+        .btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+            z-index: -1;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(51, 102, 204, 0.3);
+        }
+        
+        .btn-secondary:hover::before {
+            left: 100%;
+        }
+        
+        .news-card {
+            transition: all 0.4s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            position: relative;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .news-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .news-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 28px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-badge.primary {
+            background-color: rgba(0, 204, 102, 0.1);
+            color: var(--primary-green);
+        }
+        
+        .category-badge.secondary {
+            background-color: rgba(51, 102, 204, 0.1);
+            color: var(--primary-blue);
+        }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+        
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6); }
+            100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary-blue);
+            top: 10%;
+            left: 5%;
+            animation: float-shape 15s ease-in-out infinite;
+        }
+        
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: var(--primary-green);
+            bottom: 15%;
+            right: 10%;
+            animation: float-shape 12s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float-shape {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(20px, 30px) rotate(120deg); }
+            66% { transform: translate(-15px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        .nav-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .footer-links a {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-links a:hover::before {
+            width: 100%;
+        }
+        
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-blue);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 10px 40px;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid var(--primary-green);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(odd)::after {
+            right: -13px;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -13px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Ajustes de responsividad */
+        @media (max-width: 1024px) {
+            .stats-number {
+                font-size: 2rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item:nth-child(odd)::after, 
+            .timeline-item:nth-child(even)::after {
+                left: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-gradient {
+                padding-top: 100px;
+                padding-bottom: 80px;
+            }
+            .stats-number {
+                font-size: 2rem;
+            }
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero-gradient {
+                text-align: center;
+            }
+            .news-card {
+                margin: 0 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5493491541201" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Navigation -->
+    <nav class="bg-white nav-shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <div class="h-12 w-12 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </a>
+                    <span class="text-xl font-bold text-gray-800">IA Noticias</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html" class="text-gray-800 hover:text-green-600 transition font-medium font-bold">Inicio</a>
+                    <a href="/noticias.html" class="text-gray-800 hover:text-green-600 transition font-medium">Noticias</a>
+                    <a href="/tutoriales.html" class="text-gray-800 hover:text-green-600 transition font-medium">Tutoriales</a>
+                    <a href="/herramientas.html" class="text-gray-800 hover:text-green-600 transition font-medium">Herramientas</a>
+                    <a href="/eventos.html" class="text-gray-800 hover:text-green-600 transition font-medium">Eventos</a>
+                    <a href="/contacto.html" class="btn-primary px-5 py-2.5 rounded-full font-medium">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-gradient section-padding">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 leading-tight">Noticias de <span class="gradient-text">Inteligencia Artificial</span></h1>
+                <p class="text-xl text-gray-600 mb-8">Mantente actualizado con las últimas novedades, análisis y tendencias del mundo de la IA</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#noticias" class="btn-primary px-8 py-4 rounded-full text-center text-lg font-semibold">Ver Noticias</a>
+                    <a href="#newsletter" class="btn-secondary px-8 py-4 rounded-full text-center text-lg font-semibold">Suscribirse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="stats-number">+500</div>
+                    <p class="text-gray-600 font-medium">Artículos publicados</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">25K+</div>
+                    <p class="text-gray-600 font-medium">Lectores mensuales</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">50+</div>
+                    <p class="text-gray-600 font-medium">Expertos colaboradores</p>
+                </div>
+                <div class="p-6">
+                    <div class="stats-number">95%</div>
+                    <p class="text-gray-600 font-medium">Contenido original</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News Section -->
+    <section id="noticias" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Noticias Destacadas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Los desarrollos más importantes en inteligencia artificial que están dando forma al futuro</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Featured News 1 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Nuevo modelo de lenguaje" class="w-full h-48 object-cover">
+                    <div class="news-content">
+                        <div class="news-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">OpenAI presenta GPT-5: ¿La IA más avanzada hasta la fecha?</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">La nueva versión del modelo de lenguaje promete capacidades revolucionarias en comprensión contextual y razonamiento complejo.</p>
+                        
+                        <div class="mb-4">
+                            <span class="category-badge primary">Modelos de Lenguaje</span>
+                            <span class="category-badge secondary">OpenAI</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"Las mejoras en razonamiento lógico y capacidad de planificación representan un salto cualitativo respecto a generaciones anteriores."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Dr. Elena Martínez, Investigadora en IA</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured News 2 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1677442135339-6e6ee77e27b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="IA en medicina" class="w-full h-48 object-cover">
+                    <div class="news-content">
+                        <div class="news-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">IA diagnostica cáncer con 98% de precisión en estudio clínico</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Sistema de aprendizaje profundo supera a radiólogos humanos en detección temprana de tumores pulmonares.</p>
+                        
+                        <div class="mb-4">
+                            <span class="category-badge primary">Salud</span>
+                            <span class="category-badge secondary">Aprendizaje Profundo</span>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-green-800 italic">"Esta tecnología podría revolucionar el diagnóstico precoz del cáncer, salvando millones de vidas anualmente."</p>
+                            <p class="text-sm text-green-800 font-medium mt-2">- Dr. Carlos Rodríguez, Oncólogo</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#" class="btn-primary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured News 3 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1676299081931-57b0bccaf7a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ética en IA" class="w-full h-48 object-cover">
+                    <div class="news-content">
+                        <div class="news-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">UE aprueba Ley de IA: Primer marco regulatorio integral</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Nueva legislación establece categorías de riesgo y requisitos para sistemas de IA en la Unión Europea.</p>
+                        
+                        <div class="mb-4">
+                            <span class="category-badge primary">Regulación</span>
+                            <span class="category-badge secondary">Ética</span>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                            <p class="text-sm text-blue-800 italic">"La ley busca equilibrar la innovación con la protección de derechos fundamentales, marcando un precedente global."</p>
+                            <p class="text-sm text-blue-800 font-medium mt-2">- Ana López, Especialista en Derecho Digital</p>
+                        </div>
+                        
+                        <div class="mt-auto">
+                            <a href="#" class="btn-secondary block text-center px-4 py-2.5 rounded-full">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="/noticias.html" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Últimas Noticias</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mantente al día con los desarrollos más recientes en inteligencia artificial</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Latest News 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mr-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Google lanza Gemini Pro 1.5 con contexto de 1 millón de tokens</h3>
+                            <p class="text-gray-600">Hace 2 horas</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">El nuevo modelo de Google puede procesar documentos extensos, videos completos y conjuntos de datos masivos en una sola solicitud.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2">
+                            <span class="category-badge primary">Google</span>
+                            <span class="category-badge secondary">Multimodal</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
+                    </div>
+                </div>
+                
+                <!-- Latest News 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mr-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Análisis: Cómo la IA está transformando el sector financiero</h3>
+                            <p class="text-gray-600">Hace 5 horas</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">Estudio revela que el 78% de las instituciones financieras han implementado soluciones de IA para detección de fraudes y análisis predictivo.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2">
+                            <span class="category-badge primary">Finanzas</span>
+                            <span class="category-badge secondary">Análisis</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
+                    </div>
+                </div>
+                
+                <!-- Latest News 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mr-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">MIT desarrolla sistema de IA que aprende como un niño humano</h3>
+                            <p class="text-gray-600">Hace 1 día</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">Nueva arquitectura de aprendizaje por refuerzo imita la forma en que los niños adquieren conocimientos a través de la exploración.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2">
+                            <span class="category-badge primary">Investigación</span>
+                            <span class="category-badge secondary">MIT</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
+                    </div>
+                </div>
+                
+                <!-- Latest News 4 -->
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mr-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Expertos advierten sobre vulnerabilidades en sistemas de IA</h3>
+                            <p class="text-gray-600">Hace 1 día</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">Investigadores identifican nuevos vectores de ataque que podrían comprometer la integridad de modelos de lenguaje grandes.</p>
+                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2">
+                            <span class="category-badge primary">Seguridad</span>
+                            <span class="category-badge secondary">Vulnerabilidades</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Leer más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section-padding bg-gradient-to-r from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Explora por Categorías</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Encuentra contenido específico sobre tus áreas de interés en inteligencia artificial</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Modelos de Lenguaje</h3>
+                    <p class="text-gray-600">GPT, LLMs, procesamiento de lenguaje natural</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Visión por Computadora</h3>
+                    <p class="text-gray-600">Reconocimiento de imágenes, detección de objetos</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Redes Neuronales</h3>
+                    <p class="text-gray-600">Arquitecturas, entrenamiento, optimización</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mx-auto mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ética y Regulación</h3>
+                    <p class="text-gray-600">Bias, privacidad, políticas, gobernanza</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="cta-section py-16 text-white">
+        <div class="cta-pattern"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Mantente Actualizado con IA Noticias</h2>
+                <p class="text-xl mb-8 opacity-90">Recibe las noticias más importantes sobre inteligencia artificial directamente en tu correo</p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+                    <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">Suscribirse</button>
+                </form>
+                
+                <p class="text-sm mt-4 opacity-80">Nos tomamos en serio tu privacidad. Puedes darte de baja en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="h-10 w-10 mr-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="text-xl font-bold">IA Noticias</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">El portal líder en noticias sobre inteligencia artificial en español.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3 footer-links">
+                        <li><a href="/index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="/noticias.html" class="text-gray-400 hover:text-white">Noticias</a></li>
+                        <li><a href="/tutoriales.html" class="text-gray-400 hover:text-white">Tutoriales</a></li>
+                        <li><a href="/herramientas.html" class="text-gray-400 hover:text-white">Herramientas</a></li>
+                        <li><a href="/eventos.html" class="text-gray-400 hover:text-white">Eventos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Categorías</h3>
+                    <ul class="space-y-3 footer-links">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Modelos de Lenguaje</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Visión por Computadora</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Robótica</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ética en IA</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Aplicaciones Empresariales</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contacto</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-500"></i>
+                            <span>info@ianoticias.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-green-500"></i>
+                            <span>+34 912 345 678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-red-500"></i>
+                            <span>Madrid, España</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 IA Noticias. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // This would toggle a mobile menu - implementation depends on your needs
+            alert('Menú móvil - En una implementación completa, esto abriría/cerraría el menú');
+        });
+    </script>
+</body>
+</html>

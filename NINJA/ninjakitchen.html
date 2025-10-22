@@ -475,24 +475,77 @@
     </style>
 </head>
 <body>
-
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>TikTok's Favorite Kitchen Gadgets That Changed Everything</h1>
-            <p>Discover the appliances that went viral for making cooking faster, easier, and more delicious. As seen by millions on TikTok.</p>
-            <div class="hero-buttons">
-                <a href="#products" class="btn btn-primary">Shop Viral Products</a>
-                <a href="#tiktok" class="btn btn-secondary">Watch TikTok Reviews</a>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <div class="container">
+    <h1>TikTok's Favorite Kitchen Gadgets That Changed Everything</h1>
+    <p>Discover the appliances that went viral for making cooking faster, easier, and more delicious. As seen by millions on TikTok.</p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn btn-primary">Shop Viral Products</a>
+      <a href="#tiktok" class="btn btn-secondary">Watch TikTok Reviews</a>
+    </div>
+  </div>
+</section>
 
+<style>
+.hero {
+  background-image: url("Gemini_Generated_Image_gz69i6gz69i6gz69.png"); /* 🔁 Cambiá esta ruta si usás otra imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+  color:white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen para mejor contraste */
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+  margin: 0 10px;
+}
+
+
+.hero h1,
+.hero p,
+.hero .btn {
+  color: white !important;
+}
+
+/*SOMBRA*/
+.hero h1,
+.hero p {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+</style>
     <!-- Products Section -->
     <section id="products">
         <div class="container">
             <h2 class="section-title">TikTok's Most Wanted Products</h2>
-            <p class="section-subtitle">These are the appliances that changed how we cook. Each one tested and approved by Sebastian Trueba.</p>
+            <p class="section-subtitle">These are the appliances that changed how we cook. Each one tested and approved.</p>
             
             <div class="products-grid">
                 <!-- Product 1: Blender -->
